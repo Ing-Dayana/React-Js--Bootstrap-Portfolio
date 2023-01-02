@@ -1,0 +1,175 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+/*BASICS*/
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  transition: 0.5s;
+}
+
+p {
+  font-size: 15px;
+  margin: 20px 0;
+}
+
+/*IMG*/
+.services img{
+  position: absolute;
+}
+
+.img-about {
+  width: 250px;
+  height: 400px;
+  overflow: hidden;
+  transform: translatey(0px);
+  border-radius: 50%;
+  animation: float1 6s ease-in-out infinite;
+}
+.img-about2 {
+  width: 300px;
+  height: 350px;
+  overflow: hidden;
+  transform: translatey(0px);
+  animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float1 {
+  0% {
+    transform: translatey(0px);
+  }
+
+  50% {
+    transform: translatey(-20px);
+  }
+
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+
+  50% {
+    transform: translatey(-20px);
+  }
+
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+.img-about:hover {
+  scale: 1.1;
+}
+
+.img-fluid {
+  transition: 0.5s;
+}
+
+.img-fluid:hover {
+  scale: 0.9;
+}
+/*----------SCROLL UP-------------*/
+.scrollup {
+  position: fixed;
+  right: 1rem;
+  bottom: -20%;
+  background-color: #145463;
+  border-radius: 10px;
+  padding: .5rem;
+  display: flex;
+  opacity: .9;
+  z-index: 1;
+  transition: .4s;
+  color: #fff;
+}
+
+.scrollup:hover {
+  background-color: #FB983C;
+  opacity: 1;
+  color: black;
+}
+
+.scrollup__icon {
+  font-size: 5rem;
+}
+
+/*-----------------Show scroll-----------*/
+.show-scroll {
+  bottom: 5rem;
+}
+/*BACKGROUND*/
+.banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../public/assets/Home.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  top: 0;
+}
+
+/*MENU*/
+.navbar-nav > a.acive, .navbar-nav > li > a:focus {
+  border-bottom: 0.1875rem solid rgb(235, 226, 47);
+}
+.navbar-nav > li > a:hover{
+  border-bottom: 0.1875rem solid rgb(235, 226, 47);
+}
+
+
+/*ABOUT*/
+#about #icon{
+  transition: 0.5s;
+  cursor: pointer;
+  animation: float2 8s ease-in-out infinite;
+}
+
+#about #icon:hover{
+  color: rgb(235, 226, 47);
+}
+
+@keyframes float2 {
+  0% {
+    scale: 0.9;
+    transform: translatey(0px);
+  }
+
+  50% {
+    transform: translatey(-5px);
+  }
+
+  100% {
+    transform: translatey(0px);
+    scale: 0.9;
+  }
+}
+
+/*SERVICES*/
+
+@media screen and (max-width:991px){
+  #col{
+    padding-top: 270px;
+  }
+}
+
+.wrapper #icon {
+  font-size: 20px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.wrapper #icon:hover {
+  color: rgb(235, 226, 47);
+}
